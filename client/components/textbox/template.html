@@ -1,0 +1,16 @@
+<div class="am-chat__textbox">
+    <div class="am-chat__textarea-stub" v-if="bannedMessage">
+        <p>{{bannedMessage}}</p>
+        <small v-text="bannedTill | moment 'MMMM Do YYYY, HH:mm:ss'"></small>
+    </div>
+    <textarea class="am-chat__textarea"
+              v-else
+              @keyup.enter="sendMessage"
+              @input="placeholderVisibility"
+              v-model="message.text">
+    </textarea>
+    <div class="am-chat__textbox-placeholder" v-show="placeholderVisible">
+        • press Enter to send <br/>
+        • paste image by URL <br/>
+    </div>
+</div>

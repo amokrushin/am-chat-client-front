@@ -1,0 +1,46 @@
+@import "../../styles/index";
+
+.am-chat__menu-icon {
+    content       : "";
+    top           : 0;
+    left          : 0;
+    width         : 0.75em;
+    height        : 0.125em;
+    border-top    : 0.375em double $menu-icon-color;
+    border-bottom : 0.125em solid $menu-icon-color;
+    cursor        : pointer;
+    font-size     : 150%;
+    &:hover {
+        border-color : $menu-icon-color-active;
+    }
+}
+
+.am-chat__menu-popup {
+    //width            : 100px;
+    //height           : 60px;
+    background-color : #fff;
+    position         : absolute;
+    //z-index          : 6;
+    border           : 1px solid #888;
+    //transform        : translateZ(0);
+}
+
+.am-chat__menu {
+    list-style  : none;
+    line-height : 20px;
+    margin      : 0;
+    padding     : 6px;
+    width       : 150px;
+    color       : $menu-icon-color;
+    box-shadow  : 2px 2px 0 0 rgba(0, 0, 0, 0.5);
+    font-size   : 12px;
+    font-family : $font-family;
+
+    li {
+        cursor : pointer;
+        &:hover {
+            background-color : #eee;
+            color            : $menu-icon-color-active;
+        }
+    }
+}

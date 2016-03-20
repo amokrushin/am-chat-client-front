@@ -1,0 +1,10 @@
+@import "../../styles/index";
+
+.am-chat__toggle {
+    width            : 100%;
+    height           : $header-height;
+    background-color : #222;
+    &:hover {
+        background-color : #444;
+    }
+}

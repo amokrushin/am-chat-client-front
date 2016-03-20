@@ -1,0 +1,46 @@
+@import "../../styles/index";
+
+.am-chat__textbox {
+    box-sizing       : border-box;
+    width            : 100%;
+    height           : $footer-height;
+    position         : relative;
+    background-color : white;
+}
+
+.am-chat__textarea {
+    box-sizing       : border-box;
+    z-index          : 1;
+    border           : 1px solid $background-color;
+    width            : 100%;
+    height           : $footer-height;
+    padding          : 6px 10px;
+    resize           : vertical;
+    background-color : transparent;
+    margin-bottom    : -10px; // ???
+}
+
+.am-chat__textarea-stub {
+    box-sizing       : border-box;
+    width            : 100%;
+    background-color : $banned-background-color;
+    border           : 1px solid $background-color;
+    color            : $banned-text-color;
+    font-size        : 20px;
+    text-align       : center;
+    p {
+        padding : 0;
+        margin  : 0;
+    }
+}
+
+.am-chat__textbox-placeholder {
+    box-sizing  : border-box;
+    width       : 100%;
+    height      : $footer-height;
+    position    : absolute;
+    top         : 0;
+    padding     : 30px 10px 0 60px;
+    color       : #a5a5a5;
+    font-family : monospace;
+}

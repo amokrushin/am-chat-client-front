@@ -1,0 +1,9 @@
+<div class="am-chat" :class="{ 'am-chat--collapsed': collapsed }">
+    <toggle></toggle>
+    <ul class="am-chat__content" @scroll="scroll" debounce="200">
+        <template v-for="message in messages" track-by="id">
+            <message :user="users[message.userId]" :message="message"></message>
+        </template>
+    </ul>
+    <textbox></textbox>
+</div>

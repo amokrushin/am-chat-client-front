@@ -1,0 +1,17 @@
+<li class="am-chat-message" :class="cardClass">
+    <div class="am-chat-message__avatar">
+        <img :src="message.user.avatarUrlM"/>
+    </div>
+    <div class="am-chat-message__content">
+        <div class="am-chat-message__title">
+            <span class="am-chat-message__menu">
+                <actions v-show="message.adminActions" :message="message"></actions>
+            </span>
+            <span class="am-chat-message__username">
+                <a href="#">{{ message.user.name }}</a>
+            </span>
+            <span class="am-chat-message__time">{{message.timestamp | moment "HH:mm"}}</span>
+        </div>
+        <div class="am-chat-message__text" v-if="message.text" v-html="message.text | escape | img"></div>
+    </div>
+</li>

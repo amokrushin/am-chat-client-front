@@ -1,0 +1,11 @@
+<div>
+    <div class="am-chat__menu-icon" @click="contextMenu"></div>
+    <ul class="am-chat__menu-popup am-chat__menu" v-show="showMenu">
+        <li @click="removeMessage">Remove message</li>
+        <li @click="removeUserMessages">Remove all user messages</li>
+        <li @click="banUser">Ban user forever</li>
+        <li @click="banUser(1*60*60)">Ban user 1h</li>
+        <li @click="banUser(24*60*60)">Ban user 1d</li>
+        <li @click="unbanUser">Unban user</li>
+    </ul>
+</div>

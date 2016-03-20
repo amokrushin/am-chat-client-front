@@ -1,0 +1,28 @@
+$background-color : rgba(68, 86, 110, 0.95);
+$text-color : rgb(68, 86, 110);
+
+$message-text-color : rgb(50, 63, 77);
+$message-background-color : #eee;
+
+$message-text-color-self : rgb(50, 63, 77);
+$message-background-color-self : #eee;
+
+$message-text-color-removed : rgb(50, 63, 77);
+$message-background-color-removed : rgba(0, 0, 0, 0.3);
+
+$menu-icon-color : #5d5d5d;
+$menu-icon-color-active : #e26241;
+$font-family : 'Tahoma', Arial, Helvetica, sans-serif;
+
+$banned-text-color : #e26241;
+$banned-background-color : darken($background-color, 10%);
+
+$header-height : 30px;
+$footer-height : 100px;
+
+/**
+ *    Make the scrollbars always visible
+ */
+.ps-container > .ps-scrollbar-y-rail {
+    opacity : 0.6 !important;
+}
